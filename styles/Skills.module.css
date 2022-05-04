@@ -1,0 +1,225 @@
+.container{
+    height: auto;
+    width: 100%;
+    color: #E5E5E5;
+    position: relative;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    height: 100%;
+    position: relative;
+    top: 1;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: auto;
+
+}
+.black_container{
+    height: 100vh;
+    background-color: #0b0b0b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.technologies_description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.technologies_description h2{
+    font-family: 'Bodoni Moda';
+    font-size: 28px;
+    letter-spacing: 0.4em;
+    line-height: 55px;
+}
+.technologies_description p{
+    max-width: 500px;
+    font-size: 16px;
+}
+.other_techs{
+    margin-top: .5rem;
+    color: rgb(150, 150, 150);
+}
+.btn_container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 0;
+}
+.dwn_btn{
+    height: 65px;
+    width: auto;
+    padding: .2rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #0b0b0b;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.dwn_btn:active{
+    transform: scale(1.1);
+}
+.dwn_btn p{
+    font-weight: 700;
+    font-size: 20px;
+}
+.dwn_btn img{
+    height: 50px;
+    margin-right: .5rem;
+}
+.get_btn{
+    height: 65px;
+    width: auto;
+    padding: .2rem 1rem;
+    border-radius: 5px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b0b0b;
+    color: white;
+    cursor: pointer;
+}
+.get_btn:active{
+    transform: scale(1.1);
+}
+.get_btn p{
+    font-weight: 700;
+    font-size: 20px;
+}
+.get_btn img{
+    height: 50px;
+    margin-right: .5rem;
+
+}
+.full_glitter{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 70px;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+}
+.white_container{
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+.white_container section{
+    height: 90%;
+    justify-content: space-evenly;
+}
+.technologies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tech_name{
+    max-height: 55px;
+    margin-bottom: 1rem;
+}
+.tech_icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 200px;
+}
+.tech_icons img{
+    height: 35px;
+}
+.social{
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social img{
+    height: 35px;
+}
+
+@media (max-width: 700px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .white_container{
+        width: 100%;
+        height: auto;
+        padding: 9rem 0 2rem;
+    }
+    .white_container section{
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .tech_content:nth-child(2){
+        margin: 5rem 0;
+    }
+    .black_container{
+        height: 100%;
+        padding: 2rem .5rem 8rem;
+    }
+    .technologies_description{
+        align-items: center;
+    }
+    .technologies_description h2{
+        margin-bottom: 1rem;
+    }
+    .technologies_description p{
+        width: auto;
+        text-align: center;
+        max-width: 320px;
+    }
+    .other_techs{
+        margin-top: 1rem;
+    }
+    .btn_container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dwn_btn{
+        width: 300px;
+        margin: 2rem 0;
+    }
+    .dwn_btn p{
+        line-height: 10px;
+    }
+    .get_btn{
+        width: 300px;
+    }
+    .full_glitter{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        height: 70px;
+        margin-bottom: 2rem;
+    }
+}

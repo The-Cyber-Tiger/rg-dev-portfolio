@@ -1,0 +1,107 @@
+.header{
+    padding: 1rem 2rem 1rem 10rem;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    height: 70px;
+}
+.menu{
+    width: 125px;
+    height: auto;
+    position: relative;
+}
+.menu svg{
+    height: 18px;
+    background: none;
+}
+.menu button{
+    width: 100%;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 0 0 24px 0;
+    text-align: right;
+    padding: 1rem .5rem;
+    background-color: #0B0B0B;
+    color: white;
+    cursor: pointer;
+}
+
+.menu_active{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 1rem .5rem;
+    color: #0B0B0B;
+    background-color: #24232398;
+    position: absolute;
+    top: 1;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 0 24px 0 0;
+}
+.m_option{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 24px;
+    color: white;
+    /* background-color: #0B0B0B; */
+}
+.m_option:hover{
+    background-color: rgba(255, 255, 255, 0.247);
+}
+.m_option:active{
+    background-color: #ed61ff;
+}
+.m_circle{
+    margin-right: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.m_circle img{
+    height: 15px;
+}
+.menu_active a{
+    cursor: pointer;
+    background: none;
+}
+.menu_active a:hover{
+    color: rgb(0, 238, 255);
+}
+
+@media (max-width: 700px) {
+    .header{
+        padding: 1rem 2rem;
+        width: 100%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        top: 0;
+        z-index: 999;
+        height: auto;
+    }
+    
+    .menu_active{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        padding: 1rem .5rem;
+        color: white;
+        background-color: #24232398;
+        position: absolute;
+        top: 1;
+        width: 100%;
+        border: 1px solid white;
+        border-radius: 0 24px 0 0;
+    }
+}
