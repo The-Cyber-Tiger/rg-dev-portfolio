@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Header from '../components/header'
 import { useEffect, useState } from "react";
 import styles from '../styles/Home.module.css'
