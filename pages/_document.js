@@ -7,7 +7,7 @@ export default function Document() {
                 <meta name="description" content="Rodrigo Gibran Developer portfolio" />
                 <link rel="icon" href="/favicon-196x196.png" />
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
                 <link  href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400&family=Poppins:wght@400;700&family=Rock+Salt&display=swap" rel="stylesheet"/>
       </Head>
       <body>

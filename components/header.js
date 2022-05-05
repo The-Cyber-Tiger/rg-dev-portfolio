@@ -1,5 +1,9 @@
 import { useState } from "react";
+import Link from 'next/link'
+import Image from 'next/image'
 import styles from '../styles/Header.module.css';
+import x_icon from '../public/X.svg'
+
 
 function Header() {
 
@@ -9,27 +13,43 @@ function Header() {
         return <div className={styles.menu_active}>
             <div className={styles.m_option}>
             <div className={styles.m_circle}>
-                <img src="/X.svg" />
+                <Image src={x_icon} width={15} height={15} alt='dot icon'>
+
+                </Image>
             </div>
-            <a href="/" >Home</a>
-            </div>
-            <div className={styles.m_option}>
-            <div className={styles.m_circle}>
-            <img src="/X.svg" />
-            </div>
-            <a href="/about" >About</a>
+            <Link href="/">
+            <a>Home</a>
+            </Link>
             </div>
             <div className={styles.m_option}>
             <div className={styles.m_circle}>
-            <img src="/X.svg" />
+            <Image src={x_icon} width={15} height={15} alt='dot icon'>
+
+            </Image>
             </div>
-            <a href="/experience">Experience</a>
+            <Link href="/about">
+            <a>About</a>
+            </Link>
             </div>
             <div className={styles.m_option}>
             <div className={styles.m_circle}>
-            <img src="/X.svg" />
+            <Image src={x_icon} width={15} height={15} alt='dot icon'>
+
+            </Image>
             </div>
-            <a href="/skills">Skills</a>
+            <Link href="/experience">
+            <a>Experience</a>
+            </Link>
+            </div>
+            <div className={styles.m_option}>
+            <div className={styles.m_circle}>
+            <Image src={x_icon} width={15} height={15} alt='dot icon'>
+
+            </Image>
+            </div>
+            <Link href="/skills">
+            <a>Skills</a>
+            </Link>
             </div>
             
         </div>

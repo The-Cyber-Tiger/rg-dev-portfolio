@@ -27,11 +27,7 @@
     align-items: center;
     width: auto;
 }
-.retro_pc{
-    width: 350px;
-    height: 250px;
-    position: relative;
-}
+
 .checkmy{
     width: 100%;
     display: flex;
@@ -80,9 +76,9 @@
     cursor: pointer;
     text-decoration: none;
 }
-.pro_icons img{
-    width: 35px;
-    margin: .5rem 0;
+
+.pro_icons span{
+    margin: .5rem 0!important;
 }
 .pro_info_container{
     display: flex;
@@ -92,13 +88,17 @@
     height: 100%;
 }
 .pro_logo{
+    display: block;
     padding: 1rem 0 .5rem;
-    width: 300px;
+    max-width: 300px;
     max-height: 120px;
 }
+
 .pro_mockup{
     width: 300px;
-    padding: .5rem 0;
+    height: 190px;
+    /* width: 300px; */
+    /* padding: .5rem 0; */
 }
 .pro_category{
     display: flex;
@@ -111,9 +111,8 @@
     font-size: 11px;
     border: 1px solid #0b0b0bec;
 }
-.pro_category img{
-    height: 20px;
-    margin-right: .5rem;
+.pro_category span{
+    margin-right: .5rem!important;
 }
 .pro_info_description{
     font-size: 14px;
@@ -131,10 +130,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .pro_screenshots img{
-    margin: .5rem 0;
     border-radius: 4px;
     -webkit-box-shadow: 5px 14px 26px -10px rgba(0, 0, 0, 0.096); 
 box-shadow: 5px 14px 26px -10px rgba(0, 0, 0, 0.096);
@@ -155,8 +153,6 @@ box-shadow: 5px 14px 26px -10px rgba(0, 0, 0, 0.096);
     justify-content: center;
 }
 .option img{
-    width: 20px;
-    height: 20px;
     border: none;
 }
 .option p{
@@ -265,10 +261,11 @@ box-shadow: 5px 14px 26px -10px rgba(0, 0, 0, 0.096);
     .pro_icons{
         flex-direction: row;
     }
-    .pro_icons img{
-        margin: .5rem .5rem;
-        width: 30px;
+    .pro_icons span{
+        margin: 0 0!important;
+        margin-right: .5rem!important;
     }
+    
     .pro_icons p{
         font-size: 14px;
         line-height: 0;
@@ -279,15 +276,14 @@ box-shadow: 5px 14px 26px -10px rgba(0, 0, 0, 0.096);
         text-decoration: none;
     }
     .pro_logo{
-        max-width: 300px;
-        max-height: 70px;
         z-index: 0;
         padding: 0;
-        margin-bottom: .5rem;
     }
+   
     
     .pro_mockup{
         width: 250px;
+        height: auto;
         padding: 0;
         z-index: 1;
     }
@@ -295,10 +291,7 @@ box-shadow: 5px 14px 26px -10px rgba(0, 0, 0, 0.096);
         padding: 0 1rem;
         line-height: 10px;
     }
-    .pro_category img{
-        height: 20px;
-        margin-right: .5rem;
-    }
+    
     .pro_info_description{
         font-size: 14px;
         max-width: 300px;

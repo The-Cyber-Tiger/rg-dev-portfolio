@@ -39,12 +39,19 @@
 .hero h4{
   font-weight: 400;
 }
+.w_creator{
+  display: block;
+  width: 215px;
+  height: 127.5px;
+}
 .w_d{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .w_line{
+  width: 2px;
+    height: 100px;
   margin: 2rem 2rem;
 }
 
@@ -58,6 +65,7 @@
   position: absolute;
   bottom: 0;
 }
+
 .tellme {
   display: flex;
   align-items: center;
@@ -67,8 +75,13 @@
   bottom: 0;
   margin-bottom: 7rem;
 }
-.tellme a:hover{
-  color: #E5E5E5;
+.tellme_glitter{
+  width: 250px;
+  height: 37px;
+  transform: scale(1);
+}
+.tellme_glitter:hover{
+  transform: scale(0.9);
 }
 .tellme a{
   opacity: 1;
@@ -76,7 +89,7 @@
   transition-duration: 2s;
   font-style: normal;
   font-weight: normal;
-  color: rgb(63, 63, 63);
+  color: rgb(201, 201, 201);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -101,10 +114,11 @@
   }
   .w_creator{
     width: 157px;
-    height: auto;
+    height: 90px;
   }
   .w_line{
-    width: auto;
+    width: 2px;
+    height: 100px;
     margin: 0 1rem;
   }
   .hero h1{
@@ -112,6 +126,9 @@
   }
   .footer{
     padding: 1rem 2rem 1rem 0rem;
+  }
+  .tellme_glitter{
+    width: 220px;
   }
 
 }

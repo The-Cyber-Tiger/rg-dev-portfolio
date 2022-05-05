@@ -71,9 +71,8 @@
     font-weight: 700;
     font-size: 20px;
 }
-.dwn_btn img{
-    height: 50px;
-    margin-right: .5rem;
+.dwn_btn span{
+    margin-right: .5rem!important;
 }
 .get_btn{
     height: 65px;
@@ -95,9 +94,8 @@
     font-weight: 700;
     font-size: 20px;
 }
-.get_btn img{
-    height: 50px;
-    margin-right: .5rem;
+.get_btn span{
+    margin-right: .5rem!important;
 
 }
 .full_glitter{
@@ -135,7 +133,6 @@
     justify-content: center;
 }
 .tech_name{
-    max-height: 55px;
     margin-bottom: 1rem;
 }
 .tech_icons{
@@ -144,18 +141,14 @@
     justify-content: space-around;
     min-width: 200px;
 }
-.tech_icons img{
-    height: 35px;
-}
+
 .social{
     min-width: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.social img{
-    height: 35px;
-}
+
 
 @media (max-width: 700px) {
     .main{
@@ -213,6 +206,9 @@
         width: 300px;
     }
     .full_glitter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         bottom: 0;
         right: 0;

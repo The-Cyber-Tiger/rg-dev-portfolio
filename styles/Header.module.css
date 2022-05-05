@@ -65,9 +65,7 @@
     align-items: center;
     justify-content: center;
 }
-.m_circle img{
-    height: 15px;
-}
+
 .menu_active a{
     cursor: pointer;
     background: none;
